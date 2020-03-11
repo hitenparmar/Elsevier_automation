@@ -1,4 +1,5 @@
-#Prerequisite
+# Prerequisite
+
 (1) Install JAVA JDK 
    - Download  http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 Download 'Java JDK1.8 setup' from oracle site based on your operating system (32 bit/64 bit).
@@ -16,15 +17,17 @@ Download 'Java JDK1.8 setup' from oracle site based on your operating system (32
 (5) Install Gherkin plugin for IDE
 
 # Run Tests
+
 (1) Executing test case from feature file – Right click on the Feature file test case/scenario and select Run option
  
- ![IntelliJ](src/main/resources/Images/Executing from feature file.png)
+ ![IntelliJ IDE](src/main/resources/Images/Executing from feature file.png)
  
 (2) Executing test case from Runner class
    - Open the Run.java file in IDE from Project explorer. Right click on the file and click on option ‘Run’.
    - ‘tags’ field here will search for the tags mentioned in the feature files.
     ‘format’ field mentions the output file formats to be created post completion of test case execution.
-    ![IntelliJ IDE](src/main/resources/Images/Executing from Runner file.png)
+    
+ ![IntelliJ IDE](src/main/resources/Images/Executing from Runner file.png)
     
 (3) Executing test cases using Maven command:
   
@@ -38,7 +41,8 @@ Download 'Java JDK1.8 setup' from oracle site based on your operating system (32
     
     mvn clean verify -Dtags=@Test -Dtest.run.env=qaEnv -Dtest.run.type=local -Dtest.run.browser=chrome -Dtest.run.browser.version=80 
   
-#Description
+  
+# Description
 
 (1) Project setup with Maven
 
